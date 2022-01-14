@@ -1,5 +1,5 @@
 // ListApplication.cpp : Defines the entry point for the console application.
-//
+//Gui push operation, cloned from local repository
 
 #include "stdafx.h"
 #include "list.h"
