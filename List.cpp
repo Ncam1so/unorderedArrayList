@@ -1,4 +1,4 @@
-
+//Ncamiso Mkhabela
 #include "StdAfx.h"
 #include <iostream>
 #include "List.h"
@@ -16,7 +16,7 @@ List::~List(void)
 bool List::IsEmpty () { return size==0;}
 bool List::IsFull () {return (size == MaxSize); }
 
-void List::Insert (DataType e)
+void List::Insert (DataType e)//insert element into list
 {
  if (!(IsFull()))
  {    Item[size] = e;
@@ -34,7 +34,7 @@ void Swap (DataType& x, DataType& y)
   y =Temp;
 }                                  
 
-void List::Delete (DataType e)
+void List::Delete (DataType e)//delete element from list
 { 
  int index = 0;    
 if  (!(IsEmpty()))
@@ -50,7 +50,7 @@ if  (!(IsEmpty()))
 }
 
 
-void List::ShowData ()
+void List::ShowData ()//display element on list into standard output
 {
  for (int index = 0; index < size; index++)
     cout << Item[index] << "   ";
